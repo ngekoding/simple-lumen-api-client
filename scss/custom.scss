@@ -1,0 +1,148 @@
+// Variables
+$base-color: #e91e63;
+$grey-color: #666;
+$grey-dark-color: #333;
+$grey-light-color: #ccc;
+
+body {
+	background: #efefef;
+}
+header {
+	background: $base-color;
+	position: fixed;
+	z-index: 10;
+	width: 100%;
+	padding: 11px 15px;
+	a {
+		color: #fff;
+		font-size: 20px;
+		text-decoration: none;
+		&:hover {
+			color: #fff;
+			text-decoration: none;
+		}
+	}
+}
+input.form-control, select.form-control {
+	font-size: 16px !important;
+	border: none;
+	background: none;
+	border-bottom: 1px solid $grey-light-color;
+	padding-left: 0;
+}
+.tab-menu {
+	margin-top: 50px;
+	background: $base-color;
+	text-align: center;
+	box-shadow: 0 0 3px $grey-color;
+	position: fixed;
+	width: 100%;
+	z-index: 9;
+	div {
+		padding: 0;
+		a {
+			display: block;
+			padding: 10px 0;
+			text-decoration: none;
+			color: #efefef;
+			text-transform: uppercase;
+		}
+		a.active {
+			color: #fff;
+			border-bottom: 2px solid #fff;
+		}
+	}
+}
+
+/* Task List */
+.content {
+	margin-top: 70px;
+}
+.task-content {
+	margin-top: 95px;
+}
+.task-list {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+	li {
+		border-bottom: 1px solid $grey-light-color;
+		position: relative;
+		padding: 0 15px;
+		a {
+			color: $grey-dark-color;
+			padding: 10px 0;
+			display: block;
+			text-decoration: none;
+			h4 {
+				margin: 0;
+			}
+			span {
+				margin: 0;
+				color: $grey-color;
+				font-size: 12px;
+			}
+		}
+		.status {
+			position: absolute;
+			right: 15px;
+			top: 10px;
+			font-size: 11px;
+			text-transform: uppercase;
+		}
+	}
+}
+
+.task-detail {
+	position: relative;
+	h4 {
+		margin-top: 0;
+	}
+	.status {
+		position: absolute;
+		right: 0;
+		top: 0;
+		font-size: 11px;
+		text-transform: uppercase;
+	}
+}
+
+.btn-add {
+	position: fixed;
+	bottom: 20px;
+	right: 20px;
+	background: $base-color;
+	color: #fff;
+	display: flex;
+	align-items: center;
+  	justify-content: center;
+	height: 60px;
+	width: 60px;
+	border-radius: 50%;
+	text-decoration: none;
+	z-index: 11;
+	&:hover {
+		text-decoration: none;
+		color: #fff;
+	}
+}
+
+.btn {
+	border: none;
+	background: $grey-light-color;
+	color: $grey-color;
+}
+
+.btn-link, .btn-link:hover, .btn-link:visited, .btn-link:active {
+	color: $grey-color;
+	text-decoration: none;
+}
+
+#magic-line { 
+	position: absolute;
+	bottom: 0; 
+	left: 0; 
+	width: 100px; 
+	height: 2px; 
+	background: #fff;
+}
